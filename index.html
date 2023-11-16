@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!------------------------------ HEADER START ------------------------------>
+
+    <nav style="background-color: rgb(47, 47, 47);" class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a style="color: white;" class="navbar-brand" href="#">Карусель</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link opacity-75" href="#">Ссылка</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: white;" class="nav-link opacity-25" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Отключенная
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------ HEADER END ------------------------------>
+
+    <!------------------------------ HERO START ------------------------------>
+
+    <div id="carouselExampleCaptions" class="carousel slide bg-black mb-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="height: 400px;"
+                    src="https://images.unsplash.com/photo-1699019950419-ffe12ae956c4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="d-block w-100" alt="..." h-50>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1"> Пример заголовка.</h5>
+                    <p>Некоторое репрезентативное содержимое-заполнитель для первого слайда карусели.</p>
+                    <button type="button" class="btn btn-primary btn-sm">Learn more</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 400px;"
+                    src="https://media.istockphoto.com/id/1447217061/photo/kurşunlu-şelalesi-tabiat-parkı-turkey-photo-from-a-drone-kursunlu-şelalesi-aksu-antalya.jpg?s=1024x1024&w=is&k=20&c=kM1vXIA0ZeFkPj0Kkrp0p3aTH3_On4_P08qE3bBzTLM="
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1 text-end"> Другой пример заголовка.</h5>
+                    <p class="text-end">Некоторое репрезентативное содержимое-заполнитель для второго слайда карусели.
+                    </p>
+                    <div class="text-end">
+                        <button type="button" class="btn btn-primary btn-sm">Browse gallery</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 400px;"
+                    src="https://media.istockphoto.com/id/1456117016/photo/kuzalan-tabiat-parkı-in-giresun.jpg?s=1024x1024&w=is&k=20&c=q8nohD7det4YxSiMxuonPeUyZ4AoJBMoIi_v8lGRiZc="
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1 text-start"> Еще один для хорошей меры.</h5>
+                    <p class="text-start">Некоторое репрезентативное содержимое-заполнитель для второго слайда карусели.
+                    </p>
+                    <div class="text-start">
+                        <button type="button" class="btn btn-primary btn-sm">Sign up today</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!------------------------------ HERO END ------------------------------>
+
+    <!------------------------------ INFO START ------------------------------>
+
+    <div class="container">
+        <div
+            style="width: 1000px; display: flex; align-items: center; justify-content: space-between; margin: 0 auto; gap: 20px;">
+            <div class="" style="width: 341px;">
+                <div style="width: 120px; height: 120px; margin: 0 auto;">
+                    <img style="border-radius: 50%;"
+                        src="https://media.istockphoto.com/id/1456117016/photo/kuzalan-tabiat-parkı-in-giresun.jpg?s=1024x1024&w=is&k=20&c=q8nohD7det4YxSiMxuonPeUyZ4AoJBMoIi_v8lGRiZc="
+                        class="card-img-top" alt="..." width="120" height="120">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-2">Заголовок</h5>
+                    <p class="card-text mx-auto text-center">Некоторый типичный заполнитель для трех столбцов текста под
+                        каруселью. Это
+                        первая колонка.</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary">Посмотреть детали
+                            <i class="bi bi-chevron-double-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="" style="width: 341px;">
+                <div style="width: 120px; height: 120px; margin: 0 auto;">
+                    <img style="border-radius: 50%;"
+                        src="https://media.istockphoto.com/id/1456117016/photo/kuzalan-tabiat-parkı-in-giresun.jpg?s=1024x1024&w=is&k=20&c=q8nohD7det4YxSiMxuonPeUyZ4AoJBMoIi_v8lGRiZc="
+                        class="card-img-top" alt="..." width="120" height="120">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-2">Заголовок</h5>
+                    <p class="card-text mx-auto text-center">Некоторый типичный заполнитель для трех столбцов текста под
+                        каруселью. Это
+                        первая колонка.</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary">Посмотреть детали
+                            <i class="bi bi-chevron-double-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="" style="width: 341px;">
+                <div style="width: 120px; height: 120px; margin: 0 auto;">
+                    <img style="border-radius: 50%;"
+                        src="https://media.istockphoto.com/id/1456117016/photo/kuzalan-tabiat-parkı-in-giresun.jpg?s=1024x1024&w=is&k=20&c=q8nohD7det4YxSiMxuonPeUyZ4AoJBMoIi_v8lGRiZc="
+                        class="card-img-top" alt="..." width="120" height="120">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center mb-2">Заголовок</h5>
+                    <p class="card-text mx-auto text-center">Некоторый типичный заполнитель для трех столбцов текста под
+                        каруселью. Это
+                        первая колонка.</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-secondary">Посмотреть детали
+                            <i class="bi bi-chevron-double-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ INFO END ------------------------------>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
